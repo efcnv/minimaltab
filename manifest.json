@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "minimalTab",
+    "description": "Experience a minimalist Google homepage with a touch of colored lights",
+    "version": "1.0.0",
+    "chrome_url_overrides" : {
+        "newtab": "main.html"
+      },
+    "icons": {
+    "128": "images/128.png" }
+   }
+  

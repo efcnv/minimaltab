@@ -1,0 +1,151 @@
+body {
+    background-color: rgb(10,10,10);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.timer {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    z-index: 3;
+}
+
+.search {
+    width: 420px;
+    height: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    z-index: 3;
+}
+
+.search>input {
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.50);
+    }
+
+#glow1 {
+    background-color: white;
+    height: 300px;
+    aspect-ratio: 1;
+    left: 10%;
+    top: 10%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        aquamarine,
+        mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 1;
+    filter: blur(95px);
+    position: absolute;
+}
+
+#glow2 {
+    background-color: white;
+    height: 400px;
+    aspect-ratio: 1;
+    left: 70%;
+    top: 40%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        rgb(255, 129, 18),
+        rgb(41, 129, 187));
+    animation: rotate 25s infinite;
+    opacity: 1;
+    filter: blur(95px);
+    position: absolute;
+}
+
+#blur {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(7vmax);
+}
+
+#glowy {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
