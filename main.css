@@ -39,6 +39,8 @@ body {
     color: rgba(255, 255, 255, 0.50);
     }
 
+input:focus::-webkit-input-placeholder { color:transparent; }
+
 #glow1 {
     background-color: white;
     height: 300px;
