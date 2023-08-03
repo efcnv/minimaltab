@@ -4,7 +4,7 @@ function displayTime() {
     var min = timer.getMinutes();
     var sec = timer.getSeconds();
     var glow1 = document.getElementById("glow1");
-    var glow2 = document.getElementById("glow2")
+    var glow2 = document.getElementById("glow2");
     var greet;
 
     if(hour<10){
