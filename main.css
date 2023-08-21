@@ -15,6 +15,11 @@ body {
     transform: translate(-50%, -50%);
     font-size: 70px;
     z-index: 3;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
 }
 
 .search {
